@@ -1,4 +1,4 @@
-# NEU_Solitaire_script
+# NEU_流调接龙查缺脚本
 
 请下载对应版本的chromedriver.exe
 
