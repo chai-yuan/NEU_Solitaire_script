@@ -4,15 +4,17 @@ import time
 
 driver = webdriver.Chrome(r".\chromedriver.exe")
 
-names = {
-
-}
+names = {}
 urls = []
 
-#从文件中读取网址
+#载入信息
 with open("urls.txt","r") as f:
     content = [line.rstrip('\n') for line in f]
     urls=content
+with open("names.txt","r") as f:
+    text = [line.rstrip('\n') for line in f]
+    for name in text:
+        names[name]=0
 
 #对每一个网址进行操作
 for url in urls:
